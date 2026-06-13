@@ -35,7 +35,7 @@ function Contact() {
 
         {/* Contact Cards */}
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Email */}
 
@@ -54,6 +54,7 @@ function Contact() {
             hover:-translate-y-1
             transition-all
             duration-300
+            min-w-0
             "
           >
             <div
@@ -98,6 +99,7 @@ function Contact() {
             hover:-translate-y-1
             transition-all
             duration-300
+            min-w-0
             "
           >
             <div
@@ -128,7 +130,7 @@ function Contact() {
           {/* LinkedIn */}
 
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="linkedin.com/in/stevanuswahyu"
             target="_blank"
             rel="noreferrer"
             className="
@@ -144,6 +146,7 @@ function Contact() {
             hover:-translate-y-1
             transition-all
             duration-300
+            min-w-0
             "
           >
             <div
@@ -166,7 +169,7 @@ function Contact() {
               </p>
 
               <p className="text-white font-medium">
-                https://www.linkedin.com/in/stevanuswahyu/
+                linkedin.com/in/stevanuswahyu
               </p>
             </div>
           </a>
@@ -190,6 +193,7 @@ function Contact() {
             hover:-translate-y-1
             transition-all
             duration-300
+            min-w-0
             "
           >
             <div
