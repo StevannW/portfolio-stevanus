@@ -32,7 +32,7 @@ function Hero() {
             </h1>
 
             <h2 className="text-xl md:text-2xl text-slate-400 mt-6">
-              Computer Engineer Undergraduate | Tech Enthusiast
+              Computer Engineer | Tech Enthusiast
             </h2>
 
             {/* SOCIAL ICONS */}
