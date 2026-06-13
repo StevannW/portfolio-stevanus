@@ -7,16 +7,11 @@ import {
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-24 bg-slate-950"
-    >
+    <section id="contact" className="py-24 bg-slate-950">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Header */}
-
         <div className="text-center mb-16">
-
           <p className="text-cyan-400 uppercase tracking-[4px] font-medium">
             Get In Touch
           </p>
@@ -30,200 +25,98 @@ function Contact() {
             internship opportunities, research projects,
             or technology discussions.
           </p>
-
         </div>
 
         {/* Contact Cards */}
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* Email */}
-
+          {/* EMAIL */}
           <a
-            href="https://mail.google.com/mail/?view=cm&to=stevanuswahyu2707@gmail.com"
-            className="
-            bg-slate-950
-            border
-            border-slate-800
-            rounded-3xl
-            p-6
-            flex
-            items-center
-            gap-5
-            hover:border-cyan-500/40
-            hover:-translate-y-1
-            transition-all
-            duration-300
-            min-w-0
-            "
+            href="mailto:stevanuswahyu2707@gmail.com"
+            className="contact-card"
           >
-            <div
-              className="
-              w-14
-              h-14
-              rounded-2xl
-              bg-cyan-500/10
-              flex
-              items-center
-              justify-center
-              "
-            >
-              <FaEnvelope className="text-cyan-400 text-2xl" />
-            </div>
+            <FaEnvelope className="text-cyan-400 text-2xl shrink-0" />
 
-            <div>
-              <p className="text-slate-400 text-sm">
-                Email
-              </p>
-
-              <p className="text-white font-medium">
+            <div className="min-w-0">
+              <p className="text-slate-400 text-sm">Email</p>
+              <p className="text-white font-medium break-all text-sm md:text-base">
                 stevanuswahyu2707@gmail.com
               </p>
             </div>
           </a>
 
-          {/* Phone */}
-
+          {/* PHONE / WA */}
           <a
             href="https://wa.me/6282225460996"
-            className="
-            bg-slate-950
-            border
-            border-slate-800
-            rounded-3xl
-            p-6
-            flex
-            items-center
-            gap-5
-            hover:border-cyan-500/40
-            hover:-translate-y-1
-            transition-all
-            duration-300
-            min-w-0
-            "
+            className="contact-card"
           >
-            <div
-              className="
-              w-14
-              h-14
-              rounded-2xl
-              bg-cyan-500/10
-              flex
-              items-center
-              justify-center
-              "
-            >
-              <FaPhone className="text-cyan-400 text-2xl" />
-            </div>
+            <FaPhone className="text-cyan-400 text-2xl shrink-0" />
 
-            <div>
-              <p className="text-slate-400 text-sm">
-                Phone
-              </p>
-
+            <div className="min-w-0">
+              <p className="text-slate-400 text-sm">Phone</p>
               <p className="text-white font-medium">
                 +62 82225460996
               </p>
             </div>
           </a>
 
-          {/* LinkedIn */}
-
+          {/* LINKEDIN */}
           <a
-            href="linkedin.com/in/stevanuswahyu"
+            href="https://linkedin.com/in/stevanuswahyu"
             target="_blank"
             rel="noreferrer"
-            className="
-            bg-slate-950
-            border
-            border-slate-800
-            rounded-3xl
-            p-6
-            flex
-            items-center
-            gap-5
-            hover:border-cyan-500/40
-            hover:-translate-y-1
-            transition-all
-            duration-300
-            min-w-0
-            "
+            className="contact-card"
           >
-            <div
-              className="
-              w-14
-              h-14
-              rounded-2xl
-              bg-cyan-500/10
-              flex
-              items-center
-              justify-center
-              "
-            >
-              <FaLinkedin className="text-cyan-400 text-2xl" />
-            </div>
+            <FaLinkedin className="text-cyan-400 text-2xl shrink-0" />
 
-            <div>
-              <p className="text-slate-400 text-sm">
-                LinkedIn
-              </p>
-
-              <p className="text-white font-medium">
+            <div className="min-w-0">
+              <p className="text-slate-400 text-sm">LinkedIn</p>
+              <p className="text-white font-medium break-all text-sm md:text-base">
                 linkedin.com/in/stevanuswahyu
               </p>
             </div>
           </a>
 
-          {/* GitHub */}
-
+          {/* GITHUB */}
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/StevannW"
             target="_blank"
             rel="noreferrer"
-            className="
-            bg-slate-950
-            border
-            border-slate-800
-            rounded-3xl
-            p-6
-            flex
-            items-center
-            gap-5
-            hover:border-cyan-500/40
-            hover:-translate-y-1
-            transition-all
-            duration-300
-            min-w-0
-            "
+            className="contact-card"
           >
-            <div
-              className="
-              w-14
-              h-14
-              rounded-2xl
-              bg-cyan-500/10
-              flex
-              items-center
-              justify-center
-              "
-            >
-              <FaGithub className="text-cyan-400 text-2xl" />
-            </div>
+            <FaGithub className="text-cyan-400 text-2xl shrink-0" />
 
-            <div>
-              <p className="text-slate-400 text-sm">
-                GitHub
-              </p>
-
-              <p className="text-white font-medium">
-                https://github.com/StevannW
+            <div className="min-w-0">
+              <p className="text-slate-400 text-sm">GitHub</p>
+              <p className="text-white font-medium break-all text-sm md:text-base">
+                github.com/StevannW
               </p>
             </div>
           </a>
 
         </div>
-
       </div>
+
+      {/* reusable styles */}
+      <style>{`
+        .contact-card {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 1.5rem;
+          border-radius: 1.5rem;
+          border: 1px solid rgb(30 41 59);
+          background: rgb(2 6 23);
+          transition: all 0.3s ease;
+          min-width: 0;
+        }
+
+        .contact-card:hover {
+          border-color: rgba(34, 211, 238, 0.4);
+          transform: translateY(-4px);
+        }
+      `}</style>
+
     </section>
   );
 }
